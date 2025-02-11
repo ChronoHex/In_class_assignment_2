@@ -28,3 +28,19 @@ function calculateTotalRevenue(sales){
     return sales.reduce((total, sale) => total + sale, 0)
 }
 console.log(calculateTotalRevenue(sales));
+
+// Task 4: Object Manipulation
+let employee = {
+    name: "John Doe",
+    salary: 50000,
+    position: "Manager"
+};
+
+console.log(employee)
+
+function updateSalary(employee, percentageIncrease) {
+    employee.salary += employee.salary * percentageIncrease
+}
+
+updateSalary(employee, 0.1)
+console.log(employee)
