@@ -9,3 +9,15 @@ function getProductsByCategory(products, category) {
 }
 
 console.log(getProductsByCategory(products, "Electronics"));
+
+// Task 2: Array Methods - Map
+
+function applyDiscount(products, discountRate) {
+    return products.map(product => ({
+        ...product,
+        price: product.price - (product.price * discountRate)
+    }
+    ))
+}
+
+console.log(applyDiscount(products, 0.1));
